@@ -30,6 +30,6 @@ df_region = df_car[(df_car['continent']==choix_region)]
 
 
 df_region
-st.write("voici la df par région", choix_region)
+st.write("voici le boxplot sur les cubocinches dans la région de", choix_region)
 sns.boxplot(x = df_region['cubicinches']).figure
 plt.close()
